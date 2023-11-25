@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Nitaa</h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click</title>
+  <style>
+    /* Optional: Add some styles to make it look like a button */
+    .clickable {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+ <p>Mak mak's gonna love this</p>
+<span id="showImageText" class="clickable" onclick="showImage()">Click here to show the image</span>
+<img id="myImage" style="display:none; width: 100%;" src="Nituy.jpg" alt="Your Image">
+
+<script>
+  function showImage() {
+    document.getElementById("myImage").style.display = "inline-block";
+    document.getElementById("showImageText").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
